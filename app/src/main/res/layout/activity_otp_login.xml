@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/sp_contryCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="50dp"
+                    android:autofillHints="Select"
+                    android:drawSelectorOnTop="true"/>
+
+                <!-- Email Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/input_mobNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="mobile Number" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_getOtp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:text="Get Otp"/>
+
+    </LinearLayout>
+</ScrollView>
+
